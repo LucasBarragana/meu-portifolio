@@ -4,65 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import styles from "./page.module.css"
+import projects from "@/app/data/db";
 
 export default function ProjectPage() {
-    const projects = [
-        { 
-            id: 1, 
-            img: '/lp-2.jpg', 
-            title: 'Título do Post 1', 
-            description: 'bfdjkbfdjkislhfbjkkdlçhbfjkdsbf fhjdksbfjksdbfjsikdfbjs fbjdksbf fbjdks fbjkdsk fbk sdbfj dsk fks fk', 
-            technologies: ['/tailwind.png', '/tailwind.png'], 
-            url: 'https://www.google.com.br', 
-            giturl: 'https://www.google.com.br' 
-        },
-        { 
-            id: 2, 
-            img: '/lp-8.jpg', 
-            title: 'Título do Post 2', 
-            description: 'Conteúdo do Post 2', 
-            technologies: ['/next.png'], 
-            url: 'https://www.google.com.br', 
-            giturl: 'https://www.google.com.br' 
-        },
-        { 
-            id: 3, 
-            img: '/lp-4.jpg', 
-            title: 'Título do Post 3', 
-            description: 'Conteúdo do Post 3', 
-            technologies: ['/html.png','/css.png','/js.png'], 
-            url: 'https://www.google.com.br', 
-            giturl: 'https://www.google.com.br' 
-        },
-        { 
-            id: 4, 
-            img: '/lp-5.jpg', 
-            title: 'Título do Post 4', 
-            description: 'Conteúdo do Post 4', 
-            technologies: ['/angular.png','/tailwind.png','/ts.png'], 
-            url: 'https://www.google.com.br', 
-            giturl: 'https://www.google.com.br' 
-        },
-        { 
-            id: 5, 
-            img: '/lp-6.jpg', 
-            title: 'Título do Post 5', 
-            description: 'Conteúdo do Post 5', 
-            technologies: ['/react2.png','/css.png', '/mongo.png', ], 
-            url: 'https://www.google.com.br', 
-            giturl: 'https://www.google.com.br' 
-        },
-        { 
-            id: 6, 
-            img: '/lp-7.jpg', 
-            title: 'Título do Post 6', 
-            description: 'Conteúdo do Post 6', 
-            technologies: ['/next.png','/mongo.png', '/aws1.png','/tailwind.png'], 
-            url: 'https://www.google.com.br', 
-            giturl: 'https://www.google.com.br' 
-        }
-    ];
-
+    
     const [hoveredProject, setHoveredProject] = useState(null);
 
     const [isMobile, setIsMobile] = useState(false);
@@ -98,7 +43,7 @@ export default function ProjectPage() {
                     onMouseLeave={() => setHoveredProject(null)}>
                     <div >        
                         <Link href={project.url} target="_blank" rel="noopener noreferrer" >                    
-                            <Image src={project.img} alt='landing page' width={444}  height={22} className={styles.image}/>
+                            <Image src={project.img} alt='landing page' width={444}  height={22} className={styles.imageProjects}/>
                         </Link>                            
                         <h2 className="text-xl font-semibold mb-2 mt-5">{project.title}</h2>
                     </div>

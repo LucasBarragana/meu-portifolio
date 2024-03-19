@@ -17,56 +17,56 @@ export default function Skillssection() {
 
                 <div className="flex text-blue-900 mt-5 ml-5 ">
                     <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
-                        <Image src="/html.png" alt="html" width={22} height={12} className={styles.image}/>
+                        <Image src="/html.png" alt="html" width={22} height={12} className={styles.imageIcons}/>
                         <p width={22} height={22} className="ml-2">HTML</p>
                     </div>
                     <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
-                        <Image src="/css.png" alt="css" width={22}  height={22} className={styles.image}/>
+                        <Image src="/css.png" alt="css" width={22}  height={22} className={styles.imageIcons}/>
                         <p className="ml-2">CSS</p>                    
                     </div>
                     <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
-                        <Image src="/js.png" alt="js" width={22}  height={22} className={styles.image}/>
+                        <Image src="/js.png" alt="js" width={22}  height={22} className={styles.imageIcons}/>
                         <p className="ml-2">Javascript</p>                     
                     </div>
                     <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
-                        <Image src="/nodejs.png" alt="node" width={22}  height={22} className={styles.image}/>
+                        <Image src="/nodejs.png" alt="node" width={22}  height={22} className={styles.imageIcons}/>
                         <p className="ml-2">Node.js</p>                     
                     </div>
                 </div>
 
                 <div className="flex text-blue-900 mt-5 ml-5">
                     <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
-                        <Image src="/react2.png" alt="react" width={22} height={22} className={styles.image}/>
+                        <Image src="/react2.png" alt="react" width={22} height={22} className={styles.imageIcons}/>
                         <p className="ml-2">React.js</p>                    
                     </div>
                     <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
-                        <Image src="/next1.png" alt="next" width={22} height={22} className={styles.image}/>
+                        <Image src="/next1.png" alt="next" width={22} height={22} className={styles.imageIcons}/>
                         <p className="ml-2">Next.js</p>                     
                     </div>
                     <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
-                        <Image src="/angular.png" alt="angular" width={22} height={22} className={styles.image}/>
+                        <Image src="/angular.png" alt="angular" width={22} height={22} className={styles.imageIcons}/>
                         <p className="ml-2">Angular</p>                     
                     </div>
                 </div>
 
                 <div className="flex text-blue-900 mt-5 ml-5">
                     <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
-                        <Image src="/mongo.png" alt="mongodb" width={22} height={22} className={styles.image}/>
+                        <Image src="/mongo.png" alt="mongodb" width={22} height={22} className={styles.imageIcons}/>
                         <p className="ml-2">MongoDb</p>                     
                     </div>
                     <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
-                        <Image src="/postgre.png" alt="postegre" width={22} height={22} className={styles.image}/>
+                        <Image src="/postgre.png" alt="postegre" width={22} height={22} className={styles.imageIcons}/>
                         <p className="ml-2">PostgreSQL</p>                     
                     </div>
                     <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
-                        <Image src="/aws.png" alt="aws" width={22} height={22} className={styles.image}/>
+                        <Image src="/aws.png" alt="aws" width={22} height={22} className={styles.imageIcons}/>
                         <p className="ml-2">AWS Cloud</p>                     
                     </div>
                 </div>
 
                 <div className="flex text-blue-900 mt-5 ml-5 ">
                     <div className="flex items-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
-                        <Image src="/tailwind.png" alt="tailwind" height={22} width={22}  className={styles.image}/>
+                        <Image src="/tailwind.png" alt="tailwind" height={22} width={22}  className={styles.imageIcons}/>
                         <p className="ml-2">Tailwind.css</p>                    
                     </div>
                 </div>

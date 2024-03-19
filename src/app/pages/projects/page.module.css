@@ -1,4 +1,17 @@
 .image {
     width: auto;
     height: 100%;
+    margin-right: 15px;
+  }
+
+  .imageProjects{
+    width: auto;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 750px) {
+    .imageProjects {
+      width: 100%;
+      height: auto;
+    }
   }
