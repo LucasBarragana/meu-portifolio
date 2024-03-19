@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+
+body {
+  background-color: #111827;
+}
+
+h3{
+  font-size: 20px;
+}
+
+#maintenance{
+  font-size: 80px;
+  
+
+}
+
+#background{
+  width: 150px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 120px;
+}
+
+#perfil{
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 120px;
+}
+
+#perfil img{
+  border-radius: 50%;
+}
+
+nav a.active {
+  color: #ff9900; 
+  font-weight: bold; 
+  border-bottom: 2px solid #ff9900; 
+  padding-bottom: 2px; 
+}
+
+nav a:hover{
+  color: #ff9900; 
+  font-weight: bold; 
+  transition: background-color 0.3s;
+}
+
+.hovered {
+  background-color: #374151;
+  color: #fff;
+  transform: scale(1.05);
+  transition: ease-in-out background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+#btnSeeMore:hover{
+  background-color: #374151;
+  transition: background-color 0.3s, transform 0.3s;
+  transform: scale(1.05);
+}
+
+#btnToContact:hover{
+  background-color: #1D4ED8;
+  
+}
+
+#btnAbout:hover{
+  background-color: #374151;
+  transition: background-color 0.3s;
+}
+
+#btnSend:hover{
+  color: #ff9900; 
+  font-weight: bold; 
+  transform: scale(1.06);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#lessAbout:hover{
+  background-color: #374151;
+  color: #fff;
+  transition: ease-in-out background-color 0.3s, color 0.3s;
+}
+
+#github:hover{
+  transform: scale(1.10);
+  transition: transform 0.3s;
+}
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
