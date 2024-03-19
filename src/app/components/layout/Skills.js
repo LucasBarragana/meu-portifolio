@@ -40,7 +40,7 @@ export default function Skillssection() {
                         <p className="ml-2">React.js</p>                    
                     </div>
                     <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
-                        <Image src="/next1.png" alt="next" width={22} height={22} className={styles.imageIcons}/>
+                        <Image src="/Next1.png" alt="next" width={22} height={22} className={styles.imageIcons}/>
                         <p className="ml-2">Next.js</p>                     
                     </div>
                     <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
