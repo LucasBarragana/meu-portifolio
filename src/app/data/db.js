@@ -10,19 +10,19 @@ const projects = [
     },
     { 
         id: 2, 
-        img: '/lp-8.jpg', 
-        title: 'Título do Post 2', 
-        description: 'Conteúdo do Post 2', 
-        technologies: ['/next.png'], 
+        img: '/BIG3.png', 
+        title: 'BIG 3', 
+        description: 'Animes são para crianças? Quanto mais o tempo passa, mais ensinamentos retiro de animes.', 
+        technologies: ['/html.png','/css.png','/js.png'], 
         url: 'https://www.google.com.br', 
         giturl: 'https://www.google.com.br' 
     },
     { 
         id: 3, 
-        img: '/lp-4.jpg', 
-        title: 'Título do Post 3', 
-        description: 'Conteúdo do Post 3', 
-        technologies: ['/html.png','/css.png','/js.png'], 
+        img: '/meu-portf.png', 
+        title: 'Portifólio', 
+        description: 'Como você se descreve diz muito sobre você. Nada melhor para demostrar isso com um projeto prático', 
+        technologies: ['next.png','/tailwind.png'], 
         url: 'https://www.google.com.br', 
         giturl: 'https://www.google.com.br' 
     },
@@ -37,18 +37,18 @@ const projects = [
     },
     { 
         id: 5, 
-        img: '/lp-6.jpg', 
-        title: 'Título do Post 5', 
-        description: 'Conteúdo do Post 5', 
+        img: '/memories.png', 
+        title: 'Memories', 
+        description: 'Site desenvolvido para guardar memorias. A distancia pode deixar as pessoas longe, nosso site pode aproxima-las', 
         technologies: ['/react2.png','/css.png', '/mongo.png', ], 
         url: 'https://www.google.com.br', 
         giturl: 'https://www.google.com.br' 
     },
     { 
         id: 6, 
-        img: '/lp-7.jpg', 
-        title: 'Título do Post 6', 
-        description: 'Conteúdo do Post 6', 
+        img: '/ST-BURGUER.png', 
+        title: 'ST BURGUER', 
+        description: 'Site de pedido de comida, onde o administrador pode configurar, adicionar ou excluir, visualmente, todos itens do menu.Muito mais.',
         technologies: ['/next.png','/mongo.png', '/aws1.png','/tailwind.png'], 
         url: 'https://www.google.com.br', 
         giturl: 'https://www.google.com.br' 
