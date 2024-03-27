@@ -2,8 +2,25 @@
 
 import Image from "next/image"
 import styles from "./header.module.css"; 
+import { useEffect, useState } from "react";
+
 
 export default function Skillssection() {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia('(max-width: 700px)');
+        const handleMediaQueryChange = (mediaQuery) => {
+            setIsMobile(mediaQuery.matches);
+        };
+
+        handleMediaQueryChange(mediaQuery);
+        mediaQuery.addListener(handleMediaQueryChange);
+
+        return () => {
+            mediaQuery.removeListener(handleMediaQueryChange);
+        };
+    }, []);
 
     return(
         <section id="skills" className="mt-10 text-white">
@@ -18,56 +35,60 @@ export default function Skillssection() {
                 <div className="flex text-blue-900 mt-5 ml-5 ">
                     <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
                         <Image src="/html.png" alt="html" width={22} height={12} className={styles.imageIcons}/>
-                        <p width={22} height={22} className="ml-2">HTML</p>
+                        <p className={styles.nameTec}>HTML</p>
                     </div>
                     <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
                         <Image src="/css.png" alt="css" width={22}  height={22} className={styles.imageIcons}/>
-                        <p className="ml-2">CSS</p>                    
+                        <p className={styles.nameTec}>CSS</p>                    
                     </div>
                     <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
                         <Image src="/js.png" alt="js" width={22}  height={22} className={styles.imageIcons}/>
-                        <p className="ml-2">Javascript</p>                     
+                        <p className={styles.nameTec}>Javascript</p>                     
                     </div>
                     <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
                         <Image src="/nodejs.png" alt="node" width={22}  height={22} className={styles.imageIcons}/>
-                        <p className="ml-2">Node.js</p>                     
+                        <p className={styles.nameTec}>Node.js</p>                     
                     </div>
                 </div>
 
                 <div className="flex text-blue-900 mt-5 ml-5">
                     <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
                         <Image src="/react2.png" alt="react" width={22} height={22} className={styles.imageIcons}/>
-                        <p className="ml-2">React.js</p>                    
+                        <p className={styles.nameTec}>React.js</p>                    
                     </div>
                     <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
                         <Image src="/Next1.png" alt="next" width={22} height={22} className={styles.imageIcons}/>
-                        <p className="ml-2">Next.js</p>                     
+                        <p className={styles.nameTec}>Next.js</p>                     
                     </div>
                     <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
                         <Image src="/angular.png" alt="angular" width={22} height={22} className={styles.imageIcons}/>
-                        <p className="ml-2">Angular</p>                     
+                        <p className={styles.nameTec}>Angular</p>                     
                     </div>
                 </div>
 
                 <div className="flex text-blue-900 mt-5 ml-5">
                     <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
                         <Image src="/mongo.png" alt="mongodb" width={22} height={22} className={styles.imageIcons}/>
-                        <p className="ml-2">MongoDb</p>                     
+                        <p className={styles.nameTec}>MongoDb</p>                     
                     </div>
                     <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
                         <Image src="/postgre.png" alt="postegre" width={22} height={22} className={styles.imageIcons}/>
-                        <p className="ml-2">PostgreSQL</p>                     
+                        <p className={styles.nameTec}>PostgreSQL</p>                     
                     </div>
                     <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
                         <Image src="/aws.png" alt="aws" width={22} height={22} className={styles.imageIcons}/>
-                        <p className="ml-2">AWS Cloud</p>                     
+                        <p className={styles.nameTec}>AWS Cloud</p>                     
+                    </div>
+                    <div className="flex items-center justify-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
+                        <Image src="/redux.png" alt="redux" width={22} height={22} className={styles.imageIcons}/>
+                        <p className={styles.nameTec}>Redux</p>                     
                     </div>
                 </div>
 
                 <div className="flex text-blue-900 mt-5 ml-5 ">
                     <div className="flex items-center rounded-lg bg-white px-4 py-2 mr-5 w-[180px]">
                         <Image src="/tailwind.png" alt="tailwind" height={22} width={22}  className={styles.imageIcons}/>
-                        <p className="ml-2">Tailwind.css</p>                    
+                        <p className={styles.nameTec}>Tailwind.css</p>                    
                     </div>
                 </div>
             </div>

@@ -11,12 +11,10 @@ export default function BlogSection() {
                 Who you are entirely dictates your story. 
                 And your story, if shared, can change lives.&quot;
             </blockquote>
-            <div className="flex justify-center bg-gray-800 rounded-lg ">
-                <h1 id="maintenance" className="italic text-20xl font-semibold mt-20 mb-20">Maintenance</h1> 
-                <div id="background" className="flex mt-16 ml-10 bg-blue-900">!</div>       
-                            
-            </div>
-            
+            <div className="flex justify-center bg-gray-800 rounded-lg  ">
+                <h1 id="maintenance" className="italic  font-semibold mt-20 mb-20">Maintenance</h1> 
+                <div id="background" className="flex  bg-blue-900 mt-16 ml-5">!</div>                                  
+            </div>            
         </section>
     )
 }

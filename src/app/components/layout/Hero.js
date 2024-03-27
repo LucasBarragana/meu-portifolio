@@ -4,7 +4,7 @@ import Link from "next/link";
 import Right from "../icons/Right";
 import Down from "../icons/Down";
 import Up from "../icons/Up";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./header.module.css";
 
 export default function Hero() {
@@ -14,6 +14,21 @@ export default function Hero() {
     setShowContent(!showContent);
   };
   
+  const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia('(max-width: 700px)');
+        const handleMediaQueryChange = (mediaQuery) => {
+            setIsMobile(mediaQuery.matches);
+        };
+
+        handleMediaQueryChange(mediaQuery);
+        mediaQuery.addListener(handleMediaQueryChange);
+
+        return () => {
+            mediaQuery.removeListener(handleMediaQueryChange);
+        };
+    }, []);
 
   return (
     <section id="home" >
@@ -66,7 +81,7 @@ export default function Hero() {
       {showContent && (
         <div className="bg-gray-800 p-10 -mt-8  rounded-lg">
           <h1 className="text-4xl font-semibold text-white mb-5">Extras</h1>
-          <div className="grid grid-cols-2 gap-4">
+          <div className={`grid ${isMobile ? 'grid-cols-1' : 'grid-cols-2'} gap-4`}>
             <div className="bg-gray-200 rounded-lg px-10 py-5" >
               <h3 className=" font-semibold mb-2 text-orange-500">About me</h3>
               <p className="font-semibold text-blue-900">Passionate about technology. Constantly studying, learning new technologies, and improving in the ones that I identify myself the most.</p>

@@ -11,11 +11,18 @@
     margin-right: 15px;
   }
 
+  .nameTec{
+    font-size: 15px;
+  }
+
   @media screen and (max-width: 750px) {
     .imageIcons {
       width: auto;
-      height: 90%;
+      height: 50%;
       margin-right: 5px;
+    }
+    .nameTec{
+      font-size: 12px;
     }
   }
 
@@ -35,4 +42,29 @@
     width: auto;
     height: 100%;
     margin-bottom: 15px;
+  }
+
+  .orangeLink {
+    background-color: orange;
+  }
+  .orangeLink:hover{
+    background-color: rgb(196, 128, 2);
+  }
+
+  .blueLink {
+      background-color: blue;
+  }
+  .blueLink:hover {
+    background-color: rgb(1, 1, 216);
+  }
+
+  .redLink {
+      background-color: rgb(202, 0, 0);
+  }
+  .redLink:hover {
+    background-color: rgb(145, 0, 0);
+  }
+
+  .defaultLink {
+    background-color: blue;
   }

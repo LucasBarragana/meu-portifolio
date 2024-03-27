@@ -19,12 +19,13 @@ h3{
 }
 
 #maintenance{
-  font-size: 80px;
-  
-
+  font-size: 80px
 }
 
 #background{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 150px;
   height: 150px;
   justify-content: center;
@@ -32,6 +33,19 @@ h3{
   border-radius: 50%;
   font-size: 120px;
 }
+
+@media screen and (max-width: 750px) {
+  #maintenance {
+    font-size: 38px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #background {display: none;
+  }
+}
+
+
 
 #perfil{
   width: 60px;
@@ -98,12 +112,4 @@ nav a:hover{
 #github:hover{
   transform: scale(1.10);
   transition: transform 0.3s;
-}
-
-
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
 }

@@ -1,11 +1,28 @@
 'use client'
 
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import Image from 'next/image';
 import styles from "./header.module.css";
 
 export default function Contact() {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia('(max-width: 700px)');
+        const handleMediaQueryChange = (mediaQuery) => {
+            setIsMobile(mediaQuery.matches);
+        };
+
+        handleMediaQueryChange(mediaQuery); 
+        mediaQuery.addListener(handleMediaQueryChange); 
+
+        return () => {
+            mediaQuery.removeListener(handleMediaQueryChange); 
+        };
+    }, []);
+
+
     const form = useRef();
     const [isSent, setIsSent] = useState(false);
 
@@ -67,7 +84,7 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col mb-3" style={{ width: '50%' }}>
+                    <div className="flex flex-col mb-3" style={{ width: isMobile ? '100%' : '50%' }}>
                         <label htmlFor="message" className="block text-white mb-1">
                             Message:
                         </label>

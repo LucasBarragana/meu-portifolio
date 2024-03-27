@@ -54,9 +54,10 @@ export default function Header({ currentPage }) {
             behavior: 'smooth'
         });
     };
+   
 
     return (
-        <header id="header" className={`rounded-lg max-w-5xl mx-auto p-4 fixed top-0 left-0 right-0 z-10 transition-all duration-300 ${scrolled ? 'bg-gray-200' : 'bg-gray-900'} ${scrolled ? 'text-gray-900' : 'text-white'}`}>
+        <header id="header" className={`rounded-lg max-w-5xl mx-auto p-4 fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-gray-200' : 'bg-gray-900'} ${scrolled ? 'text-gray-900' : 'text-white'}`}>
             <div className="flex items-center md:hidden justify-between">
                 <div id="perfil">
                 <Image id="imgHeader" src="/perfil.jpg" alt="Profile Picture" width={100} height={100}/>
