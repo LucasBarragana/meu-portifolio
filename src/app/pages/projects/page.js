@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import projects from "@/app/data/db";
 import ProjectModal from "@/app/components/layout/ProjectModal";
-import styles from "./header.module.css";
+import styles from "./page.module.css";
 
 export default function ProjectsSection() {
     const [hoveredProject, setHoveredProject] = useState(null);
@@ -43,7 +43,7 @@ export default function ProjectsSection() {
     };
 
     const getLinkStyle = (website) => {
-        let style = styles.defaultLink; // Estilo padrão
+        let style = styles.defaultLink; 
         if (website === "Building !") {
             style = styles.orangeLink;
         } else if (website === "Website") {
