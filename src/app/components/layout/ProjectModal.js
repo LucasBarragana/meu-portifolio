@@ -9,7 +9,7 @@ const ProjectModal = ({ project, onClose }) => {
   };
 
   return (
-    <div className="fixed top-0 left-0 w-full h-100 flex justify-center items-center bg-black bg-opacity-50 z-50">
+    <div className="fixed top-20 left-20 w-80 h-100 flex justify-center items-center bg-black bg-opacity-50 z-50">
       <div className="bg-white p-8 rounded-lg max-w-3xl ">
         <div className="flex justify-end">
           <button onClick={onClose} className="bg-gray-800 text-white px-2 py-1 mb-2 rounded-full hovered:bg-gray-900 ">
