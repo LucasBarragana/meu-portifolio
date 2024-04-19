@@ -56,7 +56,17 @@ export default function Hero() {
               <Right />
             </Link>
           </div>
-        </div>
+          <div className="flex"> 
+            <Link className="m-5 hover:scale-110 transition ease-in-out duration-300" target="_blank" href="https://www.linkedin.com/in/lucas-barragana-564b05187/">
+              <p>Linkdn:</p>
+              <Image src={'/icons8-linkedin-48.png'} width={45} height={45}  alt="linkdn" />              
+            </Link> 
+            <Link className="m-5 hover:scale-110 transition ease-in-out duration-300" target="_blank" href="https://github.com/LucasBarragana">
+              <p>Github:</p>
+              <Image src={'/icons8-github-50.png'}   width={40} height={40}  alt="github" />              
+            </Link> 
+          </div>
+        </div>        
         <div className="relative hidden md:block md:w-1/2 ">
           <Image  src={'/bear-dev.png'}  alt='logo' width={400}  height={22} className={styles.image}/>
         </div>

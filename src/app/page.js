@@ -1,5 +1,4 @@
 'use cliente'
-import BlogSection from "./components/layout/Blog";
 import Contact from "./components/layout/Contact";
 import Hero from "./components/layout/Hero";
 import ProjectsSection from "./components/layout/Projects";
@@ -12,7 +11,6 @@ export default function Home() {
       <Hero />
       <Skillssection />
       <ProjectsSection />
-      <BlogSection />
       <Contact />
     </section>      
     </>

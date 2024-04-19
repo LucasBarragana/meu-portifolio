@@ -29,6 +29,7 @@
   .imageProjects{
     width: auto;
     height: 100%;
+    border-radius: 5px;
   }
 
   @media screen and (max-width: 750px) {
@@ -68,3 +69,4 @@
   .defaultLink {
     background-color: blue;
   }
+
